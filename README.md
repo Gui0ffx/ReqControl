@@ -8,18 +8,18 @@
 Aplicativo para Windows que funciona **100% offline**, com os dados guardados no próprio computador.
 
 [![Versão estável](https://img.shields.io/github/v/release/Gui0ffx/ReqControl?label=est%C3%A1vel&color=5B6370)](https://github.com/Gui0ffx/ReqControl/releases/latest)
-[![Versão 2.0 beta](https://img.shields.io/github/v/release/Gui0ffx/ReqControl?include_prereleases&label=2.0%20beta&color=9BA3AF)](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.0-beta.1)
+[![Versão 2.0 beta](https://img.shields.io/github/v/release/Gui0ffx/ReqControl?include_prereleases&label=2.0%20beta&color=9BA3AF)](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.0-beta.2)
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-3B4250?logo=windows&logoColor=white)
 ![Offline](https://img.shields.io/badge/funciona-sem%20internet-0B7A4B)
 ![Testes](https://img.shields.io/badge/testes-178%20aprovados-0B7A4B)
 
 <br>
 
-<a href="https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.0-beta.1">
+<a href="https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.0-beta.2">
   <img src="https://img.shields.io/badge/%E2%AC%87%EF%B8%8F%20%20Baixar%202.0%20beta%20para%20Windows-3B4250?style=for-the-badge" alt="Baixar a versão 2.0 beta para Windows" height="44">
 </a>
 
-<sub>Versão portátil: não precisa instalar nem de administrador. Quer a versão anterior? <a href="https://github.com/Gui0ffx/ReqControl/releases/tag/v1.2.6">1.2.6 estável</a>.</sub>
+<sub>Instalador ou versão portátil, sem precisar de administrador. Quer a versão anterior? <a href="https://github.com/Gui0ffx/ReqControl/releases/tag/v1.2.6">1.2.6 estável</a>.</sub>
 
 <br><br>
 
@@ -95,14 +95,20 @@ Tema escuro, tela cheia e barra de título própria. Tudo em português.
 
 ## ⬇️ Instalação (2.0 beta)
 
-1. Na [**Release 2.0.0-beta.1**](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.0-beta.1), baixe
-   **`ReqControl-Portatil-2.0.0-beta.1.zip`**.
-2. Clique com o botão direito no zip → **Extrair tudo** (numa pasta sua, por exemplo `Documentos\ReqControl`).
-3. Abra **`ReqControl.exe`** dentro da pasta extraída.
-4. Na primeira vez, o Windows pode mostrar *"O Windows protegeu o computador"*, porque o arquivo não é assinado.
-   Clique em **Mais informações → Executar assim mesmo**. Para conferir se o arquivo é o original, compare o hash com o
-   `SHA256.txt` da mesma Release.
-5. Na primeira abertura, informe o **nome da empresa** e crie o **administrador** (nome, usuário e senha).
+Na [**Release 2.0.0-beta.2**](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.0-beta.2), baixe **um** dos dois:
+
+- **`ReqControl-Instalador-2.0.0-beta.2.exe`**: instala para o seu usuário (sem pedir administrador), com atalho no
+  menu Iniciar, opção de atalho na área de trabalho e desinstalador. Traz também o `ReqControl-Ferramentas.exe`.
+  **Recomendado.**
+- **`ReqControl-Portatil-2.0.0-beta.2.exe`**: dois cliques e abre, sem instalar nada. Abre alguns segundos mais
+  devagar (se descompacta a cada abertura).
+
+Na primeira vez, o Windows pode mostrar *"O Windows protegeu o computador"*, porque o arquivo não é assinado. Clique em
+**Mais informações → Executar assim mesmo**. Para conferir se o arquivo é o original, compare o hash com o
+`SHA256.txt` da mesma Release.
+
+Na primeira abertura, informe o **nome da empresa** e crie o **administrador** (nome, usuário e senha). O instalador e
+o portátil usam os **mesmos dados**.
 
 Requisitos: Windows 10 ou 11 com o **Microsoft Edge WebView2** (já vem no Windows 11 e nas versões atualizadas do
 Windows 10).
@@ -119,8 +125,8 @@ importacoes\                PDFs importados, guardados junto da RC
 logs\reqcontrol.log         log técnico, sem o conteúdo das RCs
 ```
 
-Junto do `ReqControl.exe` vem o **`ReqControl-Ferramentas.exe`**, para usar no Prompt de Comando com o ReqControl
-fechado:
+Na versão instalada vem junto o **`ReqControl-Ferramentas.exe`** (na pasta `%LOCALAPPDATA%\Programs\ReqControl`),
+para usar no Prompt de Comando com o ReqControl fechado:
 
 | Comando | Para quê |
 |---|---|
@@ -149,7 +155,6 @@ fechado:
 - PDF escaneado (imagem) ainda não é lido automaticamente: os dados podem ser digitados na própria tela de revisão.
 - O `.exe` não é assinado digitalmente (aviso do SmartScreen na primeira vez).
 - A janela não maximizada não é redimensionada pelas bordas (o aplicativo abre em tela cheia).
-- Sem instalador por enquanto: a versão é portátil (zip).
 
 ## ❓ Dúvidas frequentes
 
@@ -189,7 +194,7 @@ Python (FastAPI, SQLAlchemy, Alembic, Pydantic) · SQLite · React + TypeScript 
 
 | Versão | Situação |
 |---|---|
-| [2.0.0-beta.1](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.0-beta.1) | **beta**: nova arquitetura, usuários, entrega por item, importação de PDF, relatórios |
+| [2.0.0-beta.2](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.0-beta.2) | **beta**: nova arquitetura, usuários, entrega por item, importação de PDF, relatórios; instalador e portátil |
 | [1.2.6](https://github.com/Gui0ffx/ReqControl/releases/tag/v1.2.6) | **estável**: versão anterior (Electron) — [telas da 1.2.6](docs/img/1.2.6/) |
 
 <div align="center">
