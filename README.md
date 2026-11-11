@@ -10,7 +10,7 @@ Aplicativo para Windows que funciona **100% offline**, com os dados guardados no
 [![Versão](https://img.shields.io/github/v/release/Gui0ffx/ReqControl?label=vers%C3%A3o&color=5B6370)](https://github.com/Gui0ffx/ReqControl/releases/latest)
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-3B4250?logo=windows&logoColor=white)
 ![Offline](https://img.shields.io/badge/funciona-sem%20internet-0B7A4B)
-![Testes](https://img.shields.io/badge/testes-188%20aprovados-0B7A4B)
+![Testes](https://img.shields.io/badge/testes-192%20aprovados-0B7A4B)
 
 <br>
 
@@ -57,7 +57,7 @@ Digite o código ou o nome e escolha com <kbd>Tab</kbd>. Código que não existe
 <td width="50%" valign="top">
 
 ### 📊 Dashboard e relatórios
-Totais por status, evolução mês a mês, categorias, **itens pendentes por tempo de espera** (amarelo a partir de 30 dias,
+Totais por status, evolução mês a mês, categorias, **itens pendentes por tempo de espera**, **filtro de mês** nas buscas (amarelo a partir de 30 dias,
 vermelho a partir de 90) e resumo mensal. Exportação **CSV** para o Excel.
 
 ### 🖨️ Impressão A4
@@ -99,10 +99,10 @@ Tema escuro, tela cheia e barra de título própria. Tudo em português.
 
 Na [**página de downloads**](https://github.com/Gui0ffx/ReqControl/releases/latest), baixe **um** dos dois:
 
-- **`ReqControl-Instalador-2.0.0.exe`**: instala para o seu usuário (sem pedir administrador), com atalho no menu
+- **`ReqControl-Instalador-2.0.1.exe`**: instala para o seu usuário (sem pedir administrador), com atalho no menu
   Iniciar, opção de atalho na área de trabalho e desinstalador. Traz também o `ReqControl-Ferramentas.exe`.
   **Recomendado.**
-- **`ReqControl-Portatil-2.0.0.exe`**: dois cliques e abre, sem instalar nada. Abre alguns segundos mais devagar
+- **`ReqControl-Portatil-2.0.1.exe`**: dois cliques e abre, sem instalar nada. Abre alguns segundos mais devagar
   (se descompacta a cada abertura).
 
 Na primeira vez, o Windows pode mostrar *"O Windows protegeu o computador"*, porque o arquivo não é assinado. Clique em
@@ -128,7 +128,8 @@ reqcontrol.db                      banco do ReqControl 2 (RCs, itens, movimenta�
 backups-v2\diario\AAAA-MM-DD\      cópia diária automática (14 dias)
 backups-v2\eventos\...              cópia antes de excluir, importar, atualizar ou restaurar (30 últimas) e manuais
 importacoes\                       PDFs importados, guardados junto da RC
-logseqcontrol.log                log técnico, sem o conteúdo das RCs
+logs
+eqcontrol.log                log técnico, sem o conteúdo das RCs
 relatorio-importacao-1.2.6-*.txt   relatório da importação dos dados da 1.2.6
 data\, backups\                    arquivos da 1.2.6: só lidos, nunca alterados
 ```
@@ -195,13 +196,14 @@ Abra a RC e clique em **Imprimir**: o PDF A4 abre no visualizador de PDF do Wind
 ## 🛠️ Feito com
 
 Python (FastAPI, SQLAlchemy, Alembic, Pydantic) · SQLite · React + TypeScript · pywebview + WebView2 · PyInstaller.
-151 testes do sistema e 37 testes de tela, todos com dados fictícios.
+151 testes do sistema e 41 testes de tela, todos com dados fictícios.
 
 ## 📜 Versões
 
 | Versão | Situação |
 |---|---|
-| [2.0.0](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.0) | **atual**: nova arquitetura, usuários, entrega por item, importação de PDF e dos dados da 1.2.6, relatórios |
+| [2.0.1](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.1) | **atual**: filtro de mês nas buscas de Requisições, Movimentações e Itens pendentes |
+| [2.0.0](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.0) | nova arquitetura, usuários, entrega por item, importação de PDF e dos dados da 1.2.6, relatórios |
 | [1.2.6](https://github.com/Gui0ffx/ReqControl/releases/tag/v1.2.6) | anterior (Electron) — [telas da 1.2.6](docs/img/1.2.6/) |
 
 <div align="center">
