@@ -7,19 +7,18 @@
 **Requisições de compra, entregas por item e movimentações de materiais, num só lugar.**<br>
 Aplicativo para Windows que funciona **100% offline**, com os dados guardados no próprio computador.
 
-[![Versão estável](https://img.shields.io/github/v/release/Gui0ffx/ReqControl?label=est%C3%A1vel&color=5B6370)](https://github.com/Gui0ffx/ReqControl/releases/latest)
-[![Versão 2.0 beta](https://img.shields.io/github/v/release/Gui0ffx/ReqControl?include_prereleases&label=2.0%20beta&color=9BA3AF)](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.0-beta.2)
+[![Versão](https://img.shields.io/github/v/release/Gui0ffx/ReqControl?label=vers%C3%A3o&color=5B6370)](https://github.com/Gui0ffx/ReqControl/releases/latest)
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-3B4250?logo=windows&logoColor=white)
 ![Offline](https://img.shields.io/badge/funciona-sem%20internet-0B7A4B)
-![Testes](https://img.shields.io/badge/testes-178%20aprovados-0B7A4B)
+![Testes](https://img.shields.io/badge/testes-188%20aprovados-0B7A4B)
 
 <br>
 
-<a href="https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.0-beta.2">
-  <img src="https://img.shields.io/badge/%E2%AC%87%EF%B8%8F%20%20Baixar%202.0%20beta%20para%20Windows-3B4250?style=for-the-badge" alt="Baixar a versão 2.0 beta para Windows" height="44">
+<a href="https://github.com/Gui0ffx/ReqControl/releases/latest">
+  <img src="https://img.shields.io/badge/%E2%AC%87%EF%B8%8F%20%20Baixar%20para%20Windows-3B4250?style=for-the-badge" alt="Baixar o ReqControl para Windows" height="44">
 </a>
 
-<sub>Instalador ou versão portátil, sem precisar de administrador. Quer a versão anterior? <a href="https://github.com/Gui0ffx/ReqControl/releases/tag/v1.2.6">1.2.6 estável</a>.</sub>
+<sub>Instalador ou versão portátil, sem precisar de administrador. Já usa a 1.2.6? As suas RCs são importadas na primeira abertura.</sub>
 
 <br><br>
 
@@ -27,9 +26,9 @@ Aplicativo para Windows que funciona **100% offline**, com os dados guardados no
 
 </div>
 
-> [!IMPORTANT]
-> **A 2.0 está em teste (beta).** Ela guarda os dados numa pasta nova e **começa vazia**: as RCs da 1.2.6 não aparecem
-> sozinhas. Use primeiro com dados de teste. A 1.2.6 continua funcionando normalmente com os seus dados.
+> [!TIP]
+> **Já usa a versão 1.2.6?** A 2.0 usa a mesma pasta de dados e, na primeira abertura, oferece **importar as suas RCs,
+> itens e movimentações**. Os arquivos da 1.2.6 não são alterados.
 
 ---
 
@@ -67,6 +66,9 @@ A RC em PDF A4, pronta para imprimir ou salvar.
 ### 💾 Cópias de segurança automáticas
 Uma por dia (14 dias), uma antes de cada exclusão (30 últimas) e cópia manual quando quiser.
 
+### 🔁 Traz os dados da 1.2.6
+Na primeira abertura, as RCs, itens, movimentações e o histórico da 1.2.6 são importados, com conferência e relatório.
+
 ### 🌑 Visual novo
 Tema escuro, tela cheia e barra de título própria. Tudo em português.
 
@@ -93,37 +95,47 @@ Tema escuro, tela cheia e barra de título própria. Tudo em português.
 
 <sub>As telas usam dados fictícios.</sub>
 
-## ⬇️ Instalação (2.0 beta)
+## ⬇️ Instalação
 
-Na [**Release 2.0.0-beta.2**](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.0-beta.2), baixe **um** dos dois:
+Na [**página de downloads**](https://github.com/Gui0ffx/ReqControl/releases/latest), baixe **um** dos dois:
 
-- **`ReqControl-Instalador-2.0.0-beta.2.exe`**: instala para o seu usuário (sem pedir administrador), com atalho no
-  menu Iniciar, opção de atalho na área de trabalho e desinstalador. Traz também o `ReqControl-Ferramentas.exe`.
+- **`ReqControl-Instalador-2.0.0.exe`**: instala para o seu usuário (sem pedir administrador), com atalho no menu
+  Iniciar, opção de atalho na área de trabalho e desinstalador. Traz também o `ReqControl-Ferramentas.exe`.
   **Recomendado.**
-- **`ReqControl-Portatil-2.0.0-beta.2.exe`**: dois cliques e abre, sem instalar nada. Abre alguns segundos mais
-  devagar (se descompacta a cada abertura).
+- **`ReqControl-Portatil-2.0.0.exe`**: dois cliques e abre, sem instalar nada. Abre alguns segundos mais devagar
+  (se descompacta a cada abertura).
 
 Na primeira vez, o Windows pode mostrar *"O Windows protegeu o computador"*, porque o arquivo não é assinado. Clique em
 **Mais informações → Executar assim mesmo**. Para conferir se o arquivo é o original, compare o hash com o
 `SHA256.txt` da mesma Release.
 
-Na primeira abertura, informe o **nome da empresa** e crie o **administrador** (nome, usuário e senha). O instalador e
-o portátil usam os **mesmos dados**.
+Na primeira abertura:
+1. informe o **nome da empresa** e crie o **administrador** (nome, usuário e senha);
+2. se a **1.2.6** já foi usada neste computador, aparece *"Importar os dados da versão anterior?"* com quantas RCs,
+   itens e movimentações serão trazidos. Se algum item estiver sem unidade, escolha a unidade ali mesmo e clique em
+   **Importar agora** (ou importe depois em **Configurações → Versão anterior**).
 
 Requisitos: Windows 10 ou 11 com o **Microsoft Edge WebView2** (já vem no Windows 11 e nas versões atualizadas do
 Windows 10).
 
 ## 💾 Seus dados
 
-Tudo fica em `%LOCALAPPDATA%\ReqControl`, fora da pasta do programa (trocar de versão não mexe nos dados):
+Tudo fica em `%LOCALAPPDATA%\ControleRC` — **a mesma pasta da 1.2.6** —, fora da pasta do programa (trocar de versão
+não mexe nos dados):
 
 ```text
-reqcontrol.db               banco com RCs, itens, movimentações, usuários e histórico
-backups\diario\AAAA-MM-DD\  cópia diária automática (14 dias)
-backups\eventos\...         cópia antes de excluir, atualizar ou restaurar (30 últimas) e cópias manuais
-importacoes\                PDFs importados, guardados junto da RC
-logs\reqcontrol.log         log técnico, sem o conteúdo das RCs
+reqcontrol.db                      banco do ReqControl 2 (RCs, itens, movimentações, usuários e histórico)
+backups-v2\diario\AAAA-MM-DD\      cópia diária automática (14 dias)
+backups-v2\eventos\...              cópia antes de excluir, importar, atualizar ou restaurar (30 últimas) e manuais
+importacoes\                       PDFs importados, guardados junto da RC
+logseqcontrol.log                log técnico, sem o conteúdo das RCs
+relatorio-importacao-1.2.6-*.txt   relatório da importação dos dados da 1.2.6
+data\, backups\                    arquivos da 1.2.6: só lidos, nunca alterados
 ```
+
+> [!NOTE]
+> Depois de importar, a 1.2.6 continua abrindo os dados antigos, mas o que você lançar na 2.0 fica só na 2.0.
+> Use uma versão de cada vez.
 
 Na versão instalada vem junto o **`ReqControl-Ferramentas.exe`** (na pasta `%LOCALAPPDATA%\Programs\ReqControl`),
 para usar no Prompt de Comando com o ReqControl fechado:
@@ -133,11 +145,6 @@ para usar no Prompt de Comando com o ReqControl fechado:
 | `ReqControl-Ferramentas copias` | lista as cópias de segurança |
 | `ReqControl-Ferramentas restaurar diario/2026-11-11` | volta para uma cópia (o estado atual é guardado antes) |
 | `ReqControl-Ferramentas recuperar-admin` | senha provisória para um administrador que esqueceu a senha |
-| `ReqControl-Ferramentas migrar <cópia da pasta da 1.2.6> --banco %LOCALAPPDATA%\ReqControl\reqcontrol.db --simular` | confere a migração dos dados da 1.2.6 sem gravar nada |
-
-> [!WARNING]
-> **Migração da 1.2.6:** use sempre uma **cópia** da pasta `%LOCALAPPDATA%\ControleRC` e rode primeiro com `--simular`.
-> O relatório mostra contagens e conversões; só grave depois de conferir.
 
 ## 🔒 Segurança e privacidade
 
@@ -150,7 +157,7 @@ para usar no Prompt de Comando com o ReqControl fechado:
 - **Sem criptografia própria:** o banco fica legível para o seu usuário do Windows. Use BitLocker e uma conta com senha
   se isso for um risco.
 
-## 🧪 Limitações desta beta
+## 🧪 Limitações conhecidas
 
 - PDF escaneado (imagem) ainda não é lido automaticamente: os dados podem ser digitados na própria tela de revisão.
 - O `.exe` não é assinado digitalmente (aviso do SmartScreen na primeira vez).
@@ -161,9 +168,9 @@ para usar no Prompt de Comando com o ReqControl fechado:
 <details>
 <summary><b>O app começou vazio. Cadê as minhas RCs?</b></summary>
 
-A 2.0 usa uma pasta nova (`%LOCALAPPDATA%\ReqControl`) e começa vazia. As RCs da 1.2.6 continuam em
-`%LOCALAPPDATA%\ControleRC` e seguem abrindo na 1.2.6. A migração é feita com o `ReqControl-Ferramentas migrar`
-(veja acima).
+Se a 1.2.6 foi usada neste computador, entre como **administrador**: aparece o aviso para importar. Se você escolheu
+"Agora não", importe em **Configurações → Versão anterior**. A importação só é feita com o ReqControl 2 ainda sem RCs,
+para não misturar dados. Num computador novo, sem a 1.2.6, o app começa vazio mesmo: é só cadastrar.
 </details>
 
 <details>
@@ -188,14 +195,14 @@ Abra a RC e clique em **Imprimir**: o PDF A4 abre no visualizador de PDF do Wind
 ## 🛠️ Feito com
 
 Python (FastAPI, SQLAlchemy, Alembic, Pydantic) · SQLite · React + TypeScript · pywebview + WebView2 · PyInstaller.
-144 testes do sistema e 34 testes de tela, todos com dados fictícios.
+151 testes do sistema e 37 testes de tela, todos com dados fictícios.
 
 ## 📜 Versões
 
 | Versão | Situação |
 |---|---|
-| [2.0.0-beta.2](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.0-beta.2) | **beta**: nova arquitetura, usuários, entrega por item, importação de PDF, relatórios; instalador e portátil |
-| [1.2.6](https://github.com/Gui0ffx/ReqControl/releases/tag/v1.2.6) | **estável**: versão anterior (Electron) — [telas da 1.2.6](docs/img/1.2.6/) |
+| [2.0.0](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.0) | **atual**: nova arquitetura, usuários, entrega por item, importação de PDF e dos dados da 1.2.6, relatórios |
+| [1.2.6](https://github.com/Gui0ffx/ReqControl/releases/tag/v1.2.6) | anterior (Electron) — [telas da 1.2.6](docs/img/1.2.6/) |
 
 <div align="center">
 <br>
