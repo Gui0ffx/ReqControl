@@ -99,10 +99,11 @@ Tema escuro, tela cheia e barra de título própria. Tudo em português.
 
 Na [**página de downloads**](https://github.com/Gui0ffx/ReqControl/releases/latest), baixe **um** dos dois:
 
-- **`ReqControl-Instalador-2.0.2.exe`**: instala para o seu usuário (sem pedir administrador), com atalho no menu
+- **`ReqControl-Instalador-2.0.3.exe`**: instala para o seu usuário (sem pedir administrador), com atalho no menu
   Iniciar, opção de atalho na área de trabalho e desinstalador. Traz também o `ReqControl-Ferramentas.exe`.
+  Se a **1.2.6** ("Controle de RCs") estiver instalada, ela é **substituída** (as suas RCs ficam e são importadas).
   **Recomendado.**
-- **`ReqControl-Portatil-2.0.2.exe`**: dois cliques e abre, sem instalar nada. Abre alguns segundos mais devagar
+- **`ReqControl-Portatil-2.0.3.exe`**: dois cliques e abre, sem instalar nada. Abre alguns segundos mais devagar
   (se descompacta a cada abertura).
 
 Na primeira vez, o Windows pode mostrar *"O Windows protegeu o computador"*, porque o arquivo não é assinado. Clique em
@@ -110,7 +111,8 @@ Na primeira vez, o Windows pode mostrar *"O Windows protegeu o computador"*, por
 `SHA256.txt` da mesma Release.
 
 Na primeira abertura:
-1. informe o **nome da empresa** e crie o **administrador** (nome, usuário e senha);
+1. informe o **nome da empresa** e o **seu nome** (por enquanto não há senha: ao abrir, o ReqControl pergunta
+   *"Quem está usando?"* e quem já usou entra com um clique);
 2. se a **1.2.6** já foi usada neste computador, aparece *"Importar os dados da versão anterior?"* com quantas RCs,
    itens e movimentações serão trazidos. Se algum item estiver sem unidade, escolha a unidade ali mesmo e clique em
    **Importar agora** (ou importe depois em **Configurações → Versão anterior**).
@@ -151,8 +153,9 @@ para usar no Prompt de Comando com o ReqControl fechado:
 
 - **Offline:** o serviço do aplicativo só aceita conexões do próprio computador (127.0.0.1), numa porta aleatória e com
   um código novo a cada abertura. Sem telemetria e sem atualização automática.
-- **Usuários e senhas:** senhas guardadas só como hash, bloqueio após tentativas erradas, sessão que expira e
-  permissões conferidas em cada ação.
+- **Usuários:** por enquanto a entrada é **só com o nome**, sem senha (o login com senha está pronto no código e
+  pode voltar). Quando ativado: senhas guardadas só como hash, bloqueio após tentativas erradas e sessão que expira.
+  As permissões são conferidas em cada ação.
 - **Entrada validada:** todos os dados são validados no servidor; o CSV é protegido contra injeção de fórmula.
 - **Cópias antes de excluir:** toda exclusão é precedida de uma cópia de segurança do banco.
 - **Sem criptografia própria:** o banco fica legível para o seu usuário do Windows. Use BitLocker e uma conta com senha
@@ -169,7 +172,7 @@ para usar no Prompt de Comando com o ReqControl fechado:
 <details>
 <summary><b>O app começou vazio. Cadê as minhas RCs?</b></summary>
 
-Se a 1.2.6 foi usada neste computador, entre como **administrador**: aparece o aviso para importar. Se você escolheu
+Se a 1.2.6 foi usada neste computador, entre com um usuário **administrador**: aparece o aviso para importar. Se você escolheu
 "Agora não", importe em **Configurações → Versão anterior**. A importação só é feita com o ReqControl 2 ainda sem RCs,
 para não misturar dados. Num computador novo, sem a 1.2.6, o app começa vazio mesmo: é só cadastrar.
 </details>
@@ -177,7 +180,7 @@ para não misturar dados. Num computador novo, sem a 1.2.6, o app começa vazio 
 <details>
 <summary><b>Esqueci a minha senha.</b></summary>
 
-Peça a um administrador: em **Configurações → Usuários → Redefinir senha** ele cria uma senha provisória. Se o único
+Na versão atual não há senha: é só informar o nome. Quando o login com senha estiver ativado, peça a um administrador: em **Configurações → Usuários → Redefinir senha** ele cria uma senha provisória. Se o único
 administrador esqueceu a senha, use `ReqControl-Ferramentas recuperar-admin` no próprio computador.
 </details>
 
@@ -202,7 +205,8 @@ Python (FastAPI, SQLAlchemy, Alembic, Pydantic) · SQLite · React + TypeScript 
 
 | Versão | Situação |
 |---|---|
-| [2.0.2](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.2) | **atual**: telas se ajustam ao monitor (de 1366 x 768 até 4K), sem barra de rolagem horizontal |
+| [2.0.3](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.3) | **atual**: entrada só com o nome, substitui a 1.2.6 ao instalar, tela de carregamento |
+| [2.0.2](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.2) | telas se ajustam ao monitor (de 1366 x 768 até 4K), sem barra de rolagem horizontal |
 | [2.0.1](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.1) | filtro de mês nas buscas de Requisições, Movimentações e Itens pendentes |
 | [2.0.0](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.0) | nova arquitetura, usuários, entrega por item, importação de PDF e dos dados da 1.2.6, relatórios |
 | [1.2.6](https://github.com/Gui0ffx/ReqControl/releases/tag/v1.2.6) | anterior (Electron) — [telas da 1.2.6](docs/img/1.2.6/) |
