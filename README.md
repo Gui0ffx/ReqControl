@@ -99,10 +99,10 @@ Tema escuro, tela cheia e barra de título própria. Tudo em português.
 
 Na [**página de downloads**](https://github.com/Gui0ffx/ReqControl/releases/latest), baixe **um** dos dois:
 
-- **`ReqControl-Instalador-2.0.1.exe`**: instala para o seu usuário (sem pedir administrador), com atalho no menu
+- **`ReqControl-Instalador-2.0.2.exe`**: instala para o seu usuário (sem pedir administrador), com atalho no menu
   Iniciar, opção de atalho na área de trabalho e desinstalador. Traz também o `ReqControl-Ferramentas.exe`.
   **Recomendado.**
-- **`ReqControl-Portatil-2.0.1.exe`**: dois cliques e abre, sem instalar nada. Abre alguns segundos mais devagar
+- **`ReqControl-Portatil-2.0.2.exe`**: dois cliques e abre, sem instalar nada. Abre alguns segundos mais devagar
   (se descompacta a cada abertura).
 
 Na primeira vez, o Windows pode mostrar *"O Windows protegeu o computador"*, porque o arquivo não é assinado. Clique em
@@ -202,7 +202,8 @@ Python (FastAPI, SQLAlchemy, Alembic, Pydantic) · SQLite · React + TypeScript 
 
 | Versão | Situação |
 |---|---|
-| [2.0.1](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.1) | **atual**: filtro de mês nas buscas de Requisições, Movimentações e Itens pendentes |
+| [2.0.2](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.2) | **atual**: telas se ajustam ao monitor (de 1366 x 768 até 4K), sem barra de rolagem horizontal |
+| [2.0.1](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.1) | filtro de mês nas buscas de Requisições, Movimentações e Itens pendentes |
 | [2.0.0](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.0) | nova arquitetura, usuários, entrega por item, importação de PDF e dos dados da 1.2.6, relatórios |
 | [1.2.6](https://github.com/Gui0ffx/ReqControl/releases/tag/v1.2.6) | anterior (Electron) — [telas da 1.2.6](docs/img/1.2.6/) |
 
