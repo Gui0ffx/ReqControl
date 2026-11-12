@@ -18,7 +18,7 @@ Aplicativo para Windows que funciona **100% offline**, com os dados guardados no
   <img src="https://img.shields.io/badge/%E2%AC%87%EF%B8%8F%20%20Baixar%20para%20Windows-3B4250?style=for-the-badge" alt="Baixar o ReqControl para Windows" height="44">
 </a>
 
-<sub>Instalador ou versão portátil, sem precisar de administrador. Já usa a 1.2.6? As suas RCs são importadas na primeira abertura.</sub>
+<sub>Instalador, sem precisar de administrador. Já usa a 1.2.6? As suas RCs são importadas na primeira abertura.</sub>
 
 <br><br>
 
