@@ -108,9 +108,8 @@ Na [**página de downloads**](https://github.com/Gui0ffx/ReqControl/releases/lat
   Iniciar, opção de atalho na área de trabalho e desinstalador. Traz também o `ReqControl-Ferramentas.exe`.
   Se a **1.2.6** ("Controle de RCs") estiver instalada, ela é **substituída** (as suas RCs ficam e são importadas).
   **Recomendado.**
-- **`ReqControl-Portatil-2.0.4.exe`**: dois cliques e abre, sem instalar nada. Abre alguns segundos mais devagar
-  (se descompacta a cada abertura).
-
+- **`ReqControl-Portatil-2.0.4.exe`**: descontinuado.
+- 
 Na primeira vez, o Windows pode mostrar *"O Windows protegeu o computador"*, porque o arquivo não é assinado. Clique em
 **Mais informações → Executar assim mesmo**. Para conferir se o arquivo é o original, compare o hash com o
 `SHA256.txt` da mesma Release.
