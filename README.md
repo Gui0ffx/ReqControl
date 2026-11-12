@@ -66,6 +66,11 @@ A RC em PDF A4, pronta para imprimir ou salvar.
 ### 💾 Cópias de segurança automáticas
 Uma por dia (14 dias), uma antes de cada exclusão (30 últimas) e cópia manual quando quiser.
 
+### 🔄 Atualiza sozinho
+Ao abrir, confere se saiu uma versão nova. Se saiu, mostra um aviso com **Atualizar agora**: baixa, confere o arquivo
+(SHA256), instala e abre de novo sozinho. Depois, a janela **Novidades** mostra o que foi adicionado ou alterado; o
+sino no topo mostra as novidades a qualquer momento. *(A partir da 2.0.4; no portátil, o aviso leva ao download.)*
+
 ### 🔁 Traz os dados da 1.2.6
 Na primeira abertura, as RCs, itens, movimentações e o histórico da 1.2.6 são importados, com conferência e relatório.
 
@@ -99,11 +104,11 @@ Tema escuro, tela cheia e barra de título própria. Tudo em português.
 
 Na [**página de downloads**](https://github.com/Gui0ffx/ReqControl/releases/latest), baixe **um** dos dois:
 
-- **`ReqControl-Instalador-2.0.3.exe`**: instala para o seu usuário (sem pedir administrador), com atalho no menu
+- **`ReqControl-Instalador-2.0.4.exe`**: instala para o seu usuário (sem pedir administrador), com atalho no menu
   Iniciar, opção de atalho na área de trabalho e desinstalador. Traz também o `ReqControl-Ferramentas.exe`.
   Se a **1.2.6** ("Controle de RCs") estiver instalada, ela é **substituída** (as suas RCs ficam e são importadas).
   **Recomendado.**
-- **`ReqControl-Portatil-2.0.3.exe`**: dois cliques e abre, sem instalar nada. Abre alguns segundos mais devagar
+- **`ReqControl-Portatil-2.0.4.exe`**: dois cliques e abre, sem instalar nada. Abre alguns segundos mais devagar
   (se descompacta a cada abertura).
 
 Na primeira vez, o Windows pode mostrar *"O Windows protegeu o computador"*, porque o arquivo não é assinado. Clique em
@@ -152,7 +157,10 @@ para usar no Prompt de Comando com o ReqControl fechado:
 ## 🔒 Segurança e privacidade
 
 - **Offline:** o serviço do aplicativo só aceita conexões do próprio computador (127.0.0.1), numa porta aleatória e com
-  um código novo a cada abertura. Sem telemetria e sem atualização automática.
+  um código novo a cada abertura. Sem telemetria.
+- **Atualizações:** ao abrir, o ReqControl só **lê** a página pública da última versão no GitHub (nenhum dado seu é
+  enviado; sem internet, não avisa nada). Só baixa arquivos das Releases deste repositório e só instala se o SHA256
+  conferir com o `SHA256.txt` da mesma Release. Nada é instalado sem você clicar em **Atualizar agora**.
 - **Usuários:** por enquanto a entrada é **só com o nome**, sem senha (o login com senha está pronto no código e
   pode voltar). Quando ativado: senhas guardadas só como hash, bloqueio após tentativas erradas e sessão que expira.
   As permissões são conferidas em cada ação.
@@ -205,7 +213,8 @@ Python (FastAPI, SQLAlchemy, Alembic, Pydantic) · SQLite · React + TypeScript 
 
 | Versão | Situação |
 |---|---|
-| [2.0.3](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.3) | **atual**: entrada só com o nome, substitui a 1.2.6 ao instalar, tela de carregamento |
+| [2.0.4](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.4) | **atual**: atualização automática com 1 clique e janela de novidades da versão |
+| [2.0.3](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.3) | entrada só com o nome, substitui a 1.2.6 ao instalar, tela de carregamento |
 | [2.0.2](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.2) | telas se ajustam ao monitor (de 1366 x 768 até 4K), sem barra de rolagem horizontal |
 | [2.0.1](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.1) | filtro de mês nas buscas de Requisições, Movimentações e Itens pendentes |
 | [2.0.0](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.0) | nova arquitetura, usuários, entrega por item, importação de PDF e dos dados da 1.2.6, relatórios |
