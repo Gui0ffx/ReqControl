@@ -67,9 +67,11 @@ A RC em PDF A4, pronta para imprimir ou salvar.
 Uma por dia (14 dias), uma antes de cada exclusão (30 últimas) e cópia manual quando quiser.
 
 ### 🔄 Atualiza sozinho
-Ao abrir, confere se saiu uma versão nova. Se saiu, mostra um aviso com **Atualizar agora**: baixa, confere o arquivo
-(SHA256), instala e abre de novo sozinho. Depois, a janela **Novidades** mostra o que foi adicionado ou alterado; o
-sino no topo mostra as novidades a qualquer momento. *(A partir da 2.0.4.)*
+Ao abrir, confere se saiu uma versão nova e, se saiu, **baixa e confere (SHA256) em segundo plano**, sem aviso. Quando
+fica pronta, pergunta **"Reiniciar agora?"**: com o sim, instala **sem nenhuma janela de instalação** e abre de novo já
+atualizado; com **Agora não**, nada acontece e o **sino** guarda a atualização para quando você quiser. Depois de
+atualizar, a janela **Novidades** mostra o que foi adicionado ou alterado. *(Atualização automática desde a 2.0.4;
+silenciosa desde a 2.0.6.)*
 
 ### 🔁 Traz os dados da 1.2.6
 Na primeira abertura, as RCs, itens, movimentações e o histórico da 1.2.6 são importados, com conferência e relatório.
@@ -104,7 +106,7 @@ Tema escuro, tela cheia e barra de título própria. Tudo em português.
 
 Na [**página de downloads**](https://github.com/Gui0ffx/ReqControl/releases/latest), baixe o instalador:
 
-- **`ReqControl-Instalador-2.0.5.exe`**: instala para o seu usuário (sem pedir administrador), com atalho no menu
+- **`ReqControl-Instalador-2.0.6.exe`**: instala para o seu usuário (sem pedir administrador), com atalho no menu
   Iniciar, opção de atalho na área de trabalho e desinstalador. Traz também o `ReqControl-Ferramentas.exe`.
   Se a **1.2.6** ("Controle de RCs") estiver instalada, ela é **substituída** (as suas RCs ficam e são importadas).
 
@@ -210,7 +212,8 @@ Python (FastAPI, SQLAlchemy, Alembic, Pydantic) · SQLite · React + TypeScript 
 
 | Versão | Situação |
 |---|---|
-| [2.0.5](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.5) | **atual**: corrige a quantidade dos itens ao importar PDF e a categoria na edição; sem versão portátil |
+| [2.0.6](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.6) | **atual**: painel com "Precisa de atenção", cores de status consistentes, material na lista e atualização silenciosa |
+| [2.0.5](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.5) | corrige a quantidade dos itens ao importar PDF e a categoria na edição; sem versão portátil |
 | [2.0.4](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.4) | atualização automática com 1 clique e janela de novidades da versão |
 | [2.0.3](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.3) | entrada só com o nome, substitui a 1.2.6 ao instalar, tela de carregamento |
 | [2.0.2](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.2) | telas se ajustam ao monitor (de 1366 x 768 até 4K), sem barra de rolagem horizontal |
