@@ -22,7 +22,7 @@ Aplicativo para Windows que funciona **100% offline**, com os dados guardados no
 
 <br><br>
 
-<img src="docs/img/2.0/dashboard.png" alt="Dashboard do ReqControl 2.0: totais, evolução das requisições, categorias e ações rápidas" width="900">
+<img src="docs/img/2.0/dashboard.png" alt="Painel do ReqControl: totais, itens que precisam de atenção, evolução das requisições e categorias" width="900">
 
 </div>
 
@@ -87,7 +87,7 @@ Tema escuro, tela cheia e barra de título própria. Tudo em português.
 
 <table>
 <tr>
-<td align="center"><img src="docs/img/2.0/requisicoes.png" alt="Lista de requisições com uma RC expandida mostrando os itens"><br><sub><b>Requisições</b>: RC expandida com itens, entrega e situação</sub></td>
+<td align="center"><img src="docs/img/2.0/requisicoes.png" alt="Lista de requisições com uma RC expandida mostrando os itens"><br><sub><b>Requisições</b>: o material na lista e a RC aberta com itens, entrega e situação</sub></td>
 <td align="center"><img src="docs/img/2.0/nova-rc.png" alt="Formulário de nova requisição de compra"><br><sub><b>Nova RC</b>: campos obrigatórios com asterisco</sub></td>
 </tr>
 <tr>
