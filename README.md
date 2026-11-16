@@ -106,7 +106,7 @@ Tema escuro, tela cheia e barra de título própria. Tudo em português.
 
 Na [**página de downloads**](https://github.com/Gui0ffx/ReqControl/releases/latest), baixe o instalador:
 
-- **`ReqControl-Instalador-2.0.7.exe`**: instala para o seu usuário (sem pedir administrador), com atalho no menu
+- **`ReqControl-Instalador-2.0.8.exe`**: instala para o seu usuário (sem pedir administrador), com atalho no menu
   Iniciar, opção de atalho na área de trabalho e desinstalador. Traz também o `ReqControl-Ferramentas.exe`.
   Se a **1.2.6** ("Controle de RCs") estiver instalada, ela é **substituída** (as suas RCs ficam e são importadas).
 
@@ -212,7 +212,8 @@ Python (FastAPI, SQLAlchemy, Alembic, Pydantic) · SQLite · React + TypeScript 
 
 | Versão | Situação |
 |---|---|
-| [2.0.7](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.7) | **atual**: importação de RCs com várias páginas (todos os itens, sem rodapé misturado, data certa) |
+| [2.0.8](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.8) | **atual**: PDF lê só a QT.PED (pedida); relatório de pendências sem quebra em 1366 x 768 |
+| [2.0.7](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.7) | importação de RCs com várias páginas (todos os itens, sem rodapé misturado, data certa) |
 | [2.0.6](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.6) | painel com "Precisa de atenção", cores de status consistentes, material na lista e atualização silenciosa |
 | [2.0.5](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.5) | corrige a quantidade dos itens ao importar PDF e a categoria na edição; sem versão portátil |
 | [2.0.4](https://github.com/Gui0ffx/ReqControl/releases/tag/v2.0.4) | atualização automática com 1 clique e janela de novidades da versão |
